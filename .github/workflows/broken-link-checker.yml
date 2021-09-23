@@ -11,15 +11,19 @@ env:
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 5 
 
     steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        submodules: recursive    
     - name: Run Broken Links Checker
       run: npx broken-link-checker $WEBSITE_URL --ordered --recursive
   
   create_issue:
     runs-on: ubuntu-latest
-    
-    timeout-minutes: 5    
+       
     steps:
     - uses: actions/checkout@v2
       if: failure()
