@@ -15,7 +15,12 @@ jobs:
     steps:
     - name: Run Broken Links Checker
       run: npx broken-link-checker $WEBSITE_URL --ordered --recursive
-
+  
+  create_issue:
+    runs-on: ubuntu-latest
+    
+    timeout-minutes: 10    
+    steps:
     - uses: actions/checkout@v2
       if: failure()
 
