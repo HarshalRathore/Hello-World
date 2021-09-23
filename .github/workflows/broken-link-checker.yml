@@ -9,7 +9,7 @@ env:
   ISSUE_TEMPLATE: ".github/ISSUE_TEMPLATE/check-broken-links.md"
   
 jobs:
-  check:
+  checking_for_broken_links:
     runs-on: ubuntu-latest
     timeout-minutes: 5 
 
@@ -20,17 +20,11 @@ jobs:
         submodules: recursive    
     - name: Run Broken Links Checker
       run: npx broken-link-checker $WEBSITE_URL --ordered --recursive
-  
-  create_issue:
-    runs-on: ubuntu-latest
-       
-    steps:
-    - uses: actions/checkout@v2
-      if: failure()
-
+    - name: creating issue
     - uses: JasonEtco/create-an-issue@v2.4.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         filename: ${{ env.ISSUE_TEMPLATE }}
       if: failure()
+  
