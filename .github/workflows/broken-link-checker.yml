@@ -25,5 +25,3 @@ jobs:
       with:
         filename: ${{ env.ISSUE_TEMPLATE }}
       if: failure()
-        filename: ${{ env.ISSUE_TEMPLATE }}
-      if: failure()
