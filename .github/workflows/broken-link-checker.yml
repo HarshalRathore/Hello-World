@@ -20,7 +20,7 @@ jobs:
         submodules: recursive    
     - name: Run Broken Links Checker
       run: npx broken-link-checker $WEBSITE_URL --ordered --recursive
-    - name: creating issue
+
     - uses: JasonEtco/create-an-issue@v2.4.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
