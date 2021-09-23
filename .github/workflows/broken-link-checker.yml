@@ -6,7 +6,7 @@ on:
 
 env:
   WEBSITE_URL: "https://open-horizon.github.io/"
-  ISSUE_TEMPLATE: ".github/workflows/check-broken-links.md"
+  ISSUE_TEMPLATE: ".github/ISSUE_TEMPLATE/check-broken-links.md"
   
 jobs:
   check:
@@ -19,9 +19,11 @@ jobs:
     - uses: actions/checkout@v2
       if: failure()
 
-    - uses: JasonEtco/create-an-issue@master
+    - uses: JasonEtco/create-an-issue@v2.4.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
+        filename: ${{ env.ISSUE_TEMPLATE }}
+      if: failure()
         filename: ${{ env.ISSUE_TEMPLATE }}
       if: failure()
