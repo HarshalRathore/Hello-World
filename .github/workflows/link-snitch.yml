@@ -8,8 +8,6 @@ on:
  
 env:
   URL: https://open-horizon.github.io/
-  FILENAME: report.yaml
-  CONFIG: config.json
 
 jobs:
   build:
