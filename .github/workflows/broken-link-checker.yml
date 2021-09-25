@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 env:
-  WEBSITE_URL: "https://open-horizon.github.io/"
+  WEBSITE_URL: "https://academicpages.github.io/"
   ISSUE_TEMPLATE: ".github/ISSUE_TEMPLATE/check-broken-links.md"
   
 jobs:
