@@ -17,8 +17,6 @@ jobs:
     - name: Run Broken Links Checker
       run: npx broken-link-checker $WEBSITE_URL --ordered --recursive
     - uses: actions/checkout@v2
-      with:
-        submodules: recursive
       if: ${{ failure() }}
     - uses: JasonEtco/create-an-issue@v2.4.0
       env:
