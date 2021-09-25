@@ -8,6 +8,6 @@ assignees: ''
 
 Broken Link Checker found :coffin: links on https://open-horizon.github.io/
 
-[View Results](https://github.com/HarshalRathore/Hello-World/actions/workflows/broken-link-checker.yml)
+[View Results](https://github.com/HarshalRathore/Hello-World/runs/{{sha}}?check_suite_focus=true)
 
 _Use search filter `─BROKEN─` to highlight failures_
