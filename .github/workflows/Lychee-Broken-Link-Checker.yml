@@ -18,12 +18,10 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@v1.0.8
         with:
-          args: https://open-horizon.github.io/ --verbose --no-progress
+          args: https://open-horizon.github.io/ --verbose --no-progress  --recursive
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           
-      - name: Fail if there were link errors
-        run: exit ${{ steps.lc.outputs.exit_code }}
         
         if: ${{ failure() }}
       - uses: JasonEtco/create-an-issue@v2.4.0
