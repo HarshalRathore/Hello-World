@@ -25,6 +25,7 @@ jobs:
         uses: victoriadrake/link-snitch@master
         with:
           Resursive urls: true
+          URL: https://open-horizon.github.io/
 
         if: ${{ failure() }}
       - uses: JasonEtco/create-an-issue@v2.4.0
