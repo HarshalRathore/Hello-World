@@ -18,7 +18,7 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@v1.0.8
         with:
-          args: --verbose --no-progress
+          args: https://open-horizon.github.io/ --verbose --no-progress
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           
