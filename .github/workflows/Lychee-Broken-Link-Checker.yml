@@ -5,6 +5,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "00 18 * * *"
+env:
+  URL: https://open-horizon.github.io/
+  ISSUE_TEMPLATE: ".github/ISSUE_TEMPLATE/check-broken-links.md"
 
 jobs:
   linkChecker:
@@ -23,10 +26,9 @@ jobs:
         run: exit ${{ steps.lc.outputs.exit_code }}
         
         if: ${{ failure() }}
-      - name: Create Issue From File
-        uses: peter-evans/create-issue-from-file@v3
+      - uses: JasonEtco/create-an-issue@v2.4.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          title: Link Checker Report
-          content-filepath: ./lychee/out.md
-          labels: report, automated issue
+          filename: ${{ env.ISSUE_TEMPLATE }}
         if: ${{ failure() }}
