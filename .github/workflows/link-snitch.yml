@@ -24,10 +24,6 @@ jobs:
       
       - id: check
         uses: victoriadrake/link-snitch@master
-        with:
-          Resursive urls: true
-          URL: https://open-horizon.github.io/
-
 
       - uses: JasonEtco/create-an-issue@v2.4.0
         env:
