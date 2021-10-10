@@ -20,17 +20,18 @@ jobs:
         uses: actions/checkout@master
         with:
           fetch-depth: 1
-
-      - name: Report broken links
+      
+      
+      - id: check
         uses: victoriadrake/link-snitch@master
         with:
           Resursive urls: true
           URL: https://open-horizon.github.io/
 
-        if: ${{ failure() }}
+        if: failure() && steps.check.outcome == 'failure'
       - uses: JasonEtco/create-an-issue@v2.4.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           filename: ${{ env.ISSUE_TEMPLATE }}
-        if: ${{ failure() }}
+        
