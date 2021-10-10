@@ -28,7 +28,7 @@ jobs:
       - uses: JasonEtco/create-an-issue@v2.4.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          LOG_URL: ${{ github.server_url }}/${{ github.repository }}/runs/${{ github.run_id }}?check_suite_focus=true
+          LOG_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}?check_suite_focus=true
         with:
           filename: ${{ env.ISSUE_TEMPLATE }}
         if: failure() && steps.check.outcome == 'failure'
