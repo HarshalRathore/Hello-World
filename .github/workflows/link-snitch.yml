@@ -31,5 +31,5 @@ jobs:
           LOG_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}?check_suite_focus=true
         with:
           filename: ${{ env.ISSUE_TEMPLATE }}
-        if: failure() && steps.check.outcome == 'failure'
+        if: failure()
 
