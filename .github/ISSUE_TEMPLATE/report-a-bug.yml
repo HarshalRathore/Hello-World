@@ -61,4 +61,4 @@ body:
         - label: I checked to make sure that this bug has not already been filed.
           required: true
         - label: I'm reporting the bug to the correct repository.
-          reqiured: true
+          required: true
