@@ -13,6 +13,7 @@ body:
     attributes:
       label: Bug description
       description: Describe roughly what the bug is here.
+      placeholder: "Logs here please."
     validations:
       required: true
 
