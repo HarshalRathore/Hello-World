@@ -1,45 +1,25 @@
 name: Report bug
-description: Report a bug in EssentialsX.
+description: Report a bug in journal-policy-tracker-backend.
+title: "[Bug]: "
 labels: 'bug: unconfirmed'
 body:
 - type: markdown
   attributes:
     value: |
-      Thanks for taking the time to report an EssentialsX bug! Fill out the form below to provide us with info to help fix the bug.
-      Only use this if you're 100% sure you've found a bug and can reproduce it. If you're looking for general help with EssentialsX, try the Q&A forum or MOSS Discord server.
-- type: dropdown
-  attributes:
-    label: Type of bug
-    description: What type of bug is this? Choose all that apply.
-    multiple: true
-    options:
-      - Performance issue or memory leak
-      - Data loss
-      - Exploit
-      - Compatibility issue
-      - Error in console
-      - Other unexpected behaviour
-  validations:
-    required: true
+      Thanks for taking the time to report an journal-policy-tracker-backend bug! Fill out the form below to provide us with info to help fix the bug.
+      Only use this if you're 100% sure you've found a bug and can reproduce it.
 
 - type: input
   attributes:
-    label: "`/ess dump all` output"
-    description: Run `/ess dump all` in the console, then copy and paste the link from the output of the command into this box. (If this command doesn't work, you should [update EssentialsX](https://essentialsx.net/downloads.html) and try again.)
-  validations:
-    required: true
-- type: input
-  attributes:
     label: Error log (if applicable)
-    description: If you are reporting a console error, upload any relevant log excerpts to either https://paste.gg or https://gist.github.com, save and the paste the link in this box. If you included those files in the same paste as your startup log, paste the same link here.
-    placeholder: "Example: https://paste.gg/p/anonymous/109dd6a10a734a3aa430d5a351ea5210"
+    description: If you are reporting a console error, upload any relevant log.
+    placeholder: 
 
 - type: textarea
   attributes:
     label: Bug description
     description: Describe roughly what the bug is here.
     placeholder: |
-      Example: "When running /nuke after putting everyone into adventure mode, there aren't any explosions..."
   validations:
     required: true
 - type: textarea
@@ -58,7 +38,6 @@ body:
     label: Expected behaviour
     description: Explain what you should expect to happen.
     placeholder: |
-      Example: "Everything should explode!"
   validations:
     required: true
 - type: textarea
@@ -66,13 +45,24 @@ body:
     label: Actual behaviour
     description: Explain what actually happens.
     placeholder: |
-      Example: "Everything doesn't explode :("
   validations:
     required: true
-
-- type: markdown
-  attributes:
-    value: |
-      In the text box below, you can attach any relevant screenshots, files and links to Timings/spark profiler reports.
-      You can also include a link to a heapdump if necessary, but please make sure you don't include any private player data in the heapdump.
-      If you suspect this issue is related to a prior issue/PR/commit, please mention it here.
+    
+- type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Check these boxes out before filing a bug.
+      options:
+        - label: I agree to follow this project's [Code of Conduct](https://github.com/codeisscience/journal-policy-tracker-backend/blob/master/CODE_OF_CONDUCT.md).
+          required: true
+        - label: I have readed the [Contributing Guidelines](https://github.com/codeisscience/journal-policy-tracker-backend/blob/master/CONTRIBUTING.md).
+          required: true
+        - label: I am running the latest version.
+          required: true
+        - label: I checked the documentation and found no answer.
+          required: true
+        - label: I checked to make sure that this bug has not already been filed.
+          required: true
+        - label: I'm reporting the bug to the correct repository.
+          reqiured: true
