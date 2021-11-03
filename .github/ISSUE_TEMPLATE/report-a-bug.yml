@@ -3,66 +3,66 @@ description: Report a bug in journal-policy-tracker-backend.
 title: "[Bug]: "
 labels: 'bug: unconfirmed'
 body:
-- type: markdown
-  attributes:
-    value: |
-      Thanks for taking the time to report an journal-policy-tracker-backend bug! Fill out the form below to provide us with info to help fix the bug.
-      Only use this if you're 100% sure you've found a bug and can reproduce it.
-
-- type: input
-  attributes:
-    label: Error log (if applicable)
-    description: If you are reporting a console error, upload any relevant log.
-    placeholder: 
-
-- type: textarea
-  attributes:
-    label: Bug description
-    description: Describe roughly what the bug is here.
-    placeholder: |
-  validations:
-    required: true
-- type: textarea
-  attributes:
-    label: Steps to reproduce
-    description: Provide an example of how to trigger the bug.
-    placeholder: |
-      Example:
-      1. Have at least 3 people online
-      2. Run `/gma *` to put everyone into adventure mode
-      3. Run `/nuke`
-  validations:
-    required: true
-- type: textarea
-  attributes:
-    label: Expected behaviour
-    description: Explain what you should expect to happen.
-    placeholder: |
-  validations:
-    required: true
-- type: textarea
-  attributes:
-    label: Actual behaviour
-    description: Explain what actually happens.
-    placeholder: |
-  validations:
-    required: true
-    
-- type: checkboxes
-    id: term
+  - type: markdown
     attributes:
-      label: Prerequisites
-      description: Check these boxes out before filing a bug.
-      options:
-        - label: I agree to follow this project's [Code of Conduct](https://github.com/codeisscience/journal-policy-tracker-backend/blob/master/CODE_OF_CONDUCT.md).
-          required: true
-        - label: I have readed the [Contributing Guidelines](https://github.com/codeisscience/journal-policy-tracker-backend/blob/master/CONTRIBUTING.md).
-          required: true
-        - label: I am running the latest version.
-          required: true
-        - label: I checked the documentation and found no answer.
-          required: true
-        - label: I checked to make sure that this bug has not already been filed.
-          required: true
-        - label: I'm reporting the bug to the correct repository.
-          reqiured: true
+      value: |
+        Thanks for taking the time to report an journal-policy-tracker-backend bug! Fill out the form below to provide us with info to help fix the bug.
+        Only use this if you're 100% sure you've found a bug and can reproduce it.
+
+  - type: input
+    attributes:
+      label: Error log (if applicable)
+      description: If you are reporting a console error, upload any relevant log.
+      placeholder: 
+
+  - type: textarea
+    attributes:
+      label: Bug description
+      description: Describe roughly what the bug is here.
+      placeholder: |
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: Provide an example of how to trigger the bug.
+      placeholder: |
+        Example:
+        1. Have at least 3 people online
+        2. Run `/gma *` to put everyone into adventure mode
+        3. Run `/nuke`
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behaviour
+      description: Explain what you should expect to happen.
+      placeholder: |
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Actual behaviour
+      description: Explain what actually happens.
+      placeholder: |
+    validations:
+      required: true
+
+  - type: checkboxes
+      id: term
+      attributes:
+        label: Prerequisites
+        description: Check these boxes out before filing a bug.
+        options:
+          - label: I agree to follow this project's [Code of Conduct](https://github.com/codeisscience/journal-policy-tracker-backend/blob/master/CODE_OF_CONDUCT.md).
+            required: true
+          - label: I have readed the [Contributing Guidelines](https://github.com/codeisscience/journal-policy-tracker-backend/blob/master/CONTRIBUTING.md).
+            required: true
+          - label: I am running the latest version.
+            required: true
+          - label: I checked the documentation and found no answer.
+            required: true
+          - label: I checked to make sure that this bug has not already been filed.
+            required: true
+          - label: I'm reporting the bug to the correct repository.
+            reqiured: true
