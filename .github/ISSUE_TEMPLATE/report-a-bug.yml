@@ -1,7 +1,7 @@
 name: Report bug
 description: Report a bug in journal-policy-tracker-backend.
 title: "[Bug]: "
-labels: 'bug: unconfirmed'
+labels: ["bug", "triage"]
 body:
   - type: markdown
     attributes:
