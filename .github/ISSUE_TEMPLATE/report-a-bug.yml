@@ -42,7 +42,7 @@ body:
       label: Actual behaviour
       description: Explain what actually happens.
       placeholder: |
-        Example: "But in place of this it does that, or it doesn't do that at all."
+        Example: "But in place of this it does that, or it doesn't do this at all."
     validations:
       required: true
   
