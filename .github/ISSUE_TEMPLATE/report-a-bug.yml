@@ -32,6 +32,8 @@ body:
     attributes:
       label: Expected behaviour
       description: Explain what you should expect to happen.
+      placeholder: |
+        Example: "This is the expected behaviour from it."
     validations:
       required: true
   
@@ -39,6 +41,8 @@ body:
     attributes:
       label: Actual behaviour
       description: Explain what actually happens.
+      placeholder: |
+        Example: "But in place of this it does that, or it doesn't do that at all."
     validations:
       required: true
   
