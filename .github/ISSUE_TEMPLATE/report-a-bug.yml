@@ -13,7 +13,6 @@ body:
     attributes:
       label: Bug description
       description: Describe roughly what the bug is here.
-      placeholder: "Logs here please."
     validations:
       required: true
 
@@ -52,6 +51,7 @@ body:
     attributes:
       label: Relevant log output(if applicable)
       description: If you are reporting a console error, please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks..
+      placeholder: "Logs here please."
       render: shell
 
   - type: checkboxes
