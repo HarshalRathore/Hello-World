@@ -49,10 +49,10 @@ body:
     required: true
     
 - type: checkboxes
-    id: prerequisites
+    id: term
     attributes:
       label: Prerequisites
-#       description: Check these boxes out before filing a bug.
+      description: Check these boxes out before filing a bug.
       options:
         - label: I agree to follow this project's [Code of Conduct](https://github.com/codeisscience/journal-policy-tracker-backend/blob/master/CODE_OF_CONDUCT.md).
           required: true
