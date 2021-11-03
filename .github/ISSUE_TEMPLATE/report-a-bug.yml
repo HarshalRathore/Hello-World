@@ -13,13 +13,11 @@ body:
     attributes:
       label: Error log (if applicable)
       description: If you are reporting a console error, upload any relevant log.
-      placeholder: 
 
   - type: textarea
     attributes:
       label: Bug description
       description: Describe roughly what the bug is here.
-      placeholder: |
     validations:
       required: true
   - type: textarea
@@ -37,14 +35,12 @@ body:
     attributes:
       label: Expected behaviour
       description: Explain what you should expect to happen.
-      placeholder: |
     validations:
       required: true
   - type: textarea
     attributes:
       label: Actual behaviour
       description: Explain what actually happens.
-      placeholder: |
     validations:
       required: true
 
