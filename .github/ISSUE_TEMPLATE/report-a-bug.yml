@@ -28,9 +28,9 @@ body:
       description: Provide an example of how to trigger the bug.
       placeholder: |
         Example:
-        1. Have at least 3 people online
-        2. Run `/gma *` to put everyone into adventure mode
-        3. Run `/nuke`
+        1. do this 
+        2. after this do that
+        3. you get the gist...right?
     validations:
       required: true
   - type: textarea
@@ -49,20 +49,20 @@ body:
       required: true
 
   - type: checkboxes
-      id: term
-      attributes:
-        label: Prerequisites
-        description: Check these boxes out before filing a bug.
-        options:
-          - label: I agree to follow this project's [Code of Conduct](https://github.com/codeisscience/journal-policy-tracker-backend/blob/master/CODE_OF_CONDUCT.md).
-            required: true
-          - label: I have readed the [Contributing Guidelines](https://github.com/codeisscience/journal-policy-tracker-backend/blob/master/CONTRIBUTING.md).
-            required: true
-          - label: I am running the latest version.
-            required: true
-          - label: I checked the documentation and found no answer.
-            required: true
-          - label: I checked to make sure that this bug has not already been filed.
-            required: true
-          - label: I'm reporting the bug to the correct repository.
-            reqiured: true
+    id: terms
+    attributes:
+      label: Prerequisites
+      description: Check these boxes out before filing a bug.
+      options:
+        - label: I agree to follow this project's [Code of Conduct](https://github.com/codeisscience/journal-policy-tracker-backend/blob/master/CODE_OF_CONDUCT.md).
+          required: true
+        - label: I have readed the [Contributing Guidelines](https://github.com/codeisscience/journal-policy-tracker-backend/blob/master/CONTRIBUTING.md).
+          required: true
+        - label: I am running the latest version.
+          required: true
+        - label: I checked the documentation and found no answer.
+          required: true
+        - label: I checked to make sure that this bug has not already been filed.
+          required: true
+        - label: I'm reporting the bug to the correct repository.
+          reqiured: true
