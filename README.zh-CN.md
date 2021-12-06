@@ -81,7 +81,7 @@
 
 Nerd Fonts 采用流行的编程字体并添加了一堆 Glyphs。
   还有一个[字体修补程序](#font-patcher)如果您想要的字体尚未修补，则可用。
-  有关更多高级信息，请参阅[维基][wiki].如果您正在寻找 Vim 插件，请参阅[Vim 开发者图标 ➶][vim-devicons].
+  有关更多高级信息，请参阅[维基][wiki].如果您正在寻找 Vim 插件，请参阅[Vim 开发图标 ➶][vim-devicons].
 
 ### 各种字体下载选项
 
@@ -219,7 +219,7 @@ _如果你..._
 
 ### `Option 3: Install Script`
 
-> 如果你想，最好的选择**自动化**安装或用于**脚本**.
+> 如果你愿意，最好的选择**自动化**安装或用于**脚本**.
 
 _笔记_:**需要克隆**截至目前的回购
 
@@ -339,7 +339,7 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 	<img src="images/nerd-fonts-patcher-logo.png" alt="Nerd Fonts Patcher">
 </h2>
 
-修补您自己选择的字体以用于[Vim 开发者图标 ➶][vim-devicons]:
+修补您自己选择的字体以用于[Vim 开发图标 ➶][vim-devicons]:
 
 -   要求：Python 2（或 Python 3），`python-fontforge`包（版本`20141231`或稍后，请参阅
     这[安装说明](http://designwithfontforge.com/en-US/Installing_Fontforge.html))
