@@ -1,8 +1,12 @@
 # مرحبًا بالعالم: غمزة:
 
-This is the repository where I do all experiments related to github actions/workflows, issue forms, Templates any non-code related contribution to the project is first tested here.
+هذا هو المستودع حيث أقوم بجميع التجارب المتعلقة بإجراءات / سير عمل github ، ونماذج الإصدار ، والقوالب ، يتم اختبار أي مساهمة غير مرتبطة بالتعليمات البرمجية في المشروع أولاً هنا.
 
 ### ماذا لدي الآن؟
 
--   a action to check for broken links on a production website and to create an issue for the same.
--   New Issue forms for contributors like bug-report issue template, and stuff.
+-   إجراء للتحقق من عدم وجود ارتباطات معطلة على موقع ويب خاص بالإنتاج ولإنشاء مشكلة لها.
+-   نماذج المشكلات الجديدة للمساهمين مثل قالب مشكلة تقرير الخطأ والأشياء.
+
+# أهلا
+
+اختبار ما إذا كان هذا الإجراء يغير أيضًا الإصدار المترجم من README إذا تم تغيير README الأصلي.
