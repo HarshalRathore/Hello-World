@@ -1,8 +1,8 @@
 # हैलो-वर्ल्ड: विंक:
 
-This is the repository where I do all experiments related to github actions/workflows, issue forms, Templates any non-code related contribution to the project is first tested here.
+यह वह रिपॉजिटरी है जहां मैं जीथब क्रियाओं/वर्कफ्लो, इश्यू फॉर्म, टेम्प्लेट से संबंधित सभी प्रयोग करता हूं, परियोजना में किसी भी गैर-कोड से संबंधित योगदान का परीक्षण पहले यहां किया जाता है।
 
 ### मेरे पास अभी क्या है?
 
--   a action to check for broken links on a production website and to create an issue for the same.
+-   एक प्रोडक्शन वेबसाइट पर टूटी कड़ियों की जांच करने और उसी के लिए एक मुद्दा बनाने के लिए एक कार्रवाई।
 -   बग-रिपोर्ट समस्या टेम्पलेट, और सामग्री जैसे योगदानकर्ताओं के लिए नए अंक प्रपत्र।
