@@ -1,8 +1,12 @@
 # 你好世界 :wink:
 
-This is the repository where I do all experiments related to github actions/workflows, issue forms, Templates any non-code related contribution to the project is first tested here.
+這是我進行與 github 操作/工作流、問題表單、模板相關的所有實驗的存儲庫，首先在這裡測試對項目的任何非代碼相關貢獻。
 
 ### 我現在有什麼？
 
 -   檢查生產網站上損壞的鏈接並為此創建問題的操作。
 -   貢獻者的新問題表單，如錯誤報告問題模板等。
+
+# 你好
+
+如果原始 README 更改，則測試此操作是否也會更改 README 的本地化版本。
