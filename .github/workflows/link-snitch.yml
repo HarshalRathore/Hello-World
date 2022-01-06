@@ -1,8 +1,8 @@
 name: Link Snitch
 
 on:
-  schedule:
-    - cron:  '0 1 1 * *'
+#   schedule:
+#     - cron:  '0 1 1 * *'
   workflow_dispatch:
 
 env:
