@@ -3,8 +3,8 @@ name: Links
 on:
   repository_dispatch:
   workflow_dispatch:
-  schedule:
-    - cron: "00 18 * * *"
+#   schedule:
+#     - cron: "00 18 * * *"
 env:
   URL: https://open-horizon.github.io/
   ISSUE_TEMPLATE: ".github/ISSUE_TEMPLATE/check-broken-links.md"
