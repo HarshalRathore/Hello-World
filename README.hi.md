@@ -1,6 +1,6 @@
 # हैलो-वर्ल्ड: विंक:
 
-यह वह रिपॉजिटरी है जहां मैं जीथब क्रियाओं/वर्कफ्लो, इश्यू फॉर्म, टेम्प्लेट से संबंधित सभी प्रयोग करता हूं, परियोजना में किसी भी गैर-कोड से संबंधित योगदान का सबसे पहले यहां परीक्षण किया जाता है।
+This is the repository where I do all experiments related to github actions/workflows, issue forms, Templates any non-code related contribution to the project is first tested here.
 
 ### मेरे पास अभी क्या है?
 
