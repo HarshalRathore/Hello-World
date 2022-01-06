@@ -1,12 +1,12 @@
-# Hello-World :wink:
+# हैलो-वर्ल्ड: विंक:
 
-This is the repository where I do all experiments related to github actions/workflows, issue forms, Templates any non-code related contribution to the project is first tested here.
+यह वह रिपॉजिटरी है जहां मैं जीथब क्रियाओं/वर्कफ्लो, इश्यू फॉर्म, टेम्प्लेट से संबंधित सभी प्रयोग करता हूं, परियोजना में किसी भी गैर-कोड से संबंधित योगदान का सबसे पहले यहां परीक्षण किया जाता है।
 
 ### मेरे पास अभी क्या है?
 
 -   एक प्रोडक्शन वेबसाइट पर टूटी कड़ियों की जांच करने और उसी के लिए एक मुद्दा बनाने के लिए एक कार्रवाई।
 -   New Issue forms for contributors like bug-report issue template, and stuff.
 
-# hello
+# नमस्ते
 
 यदि मूल README को बदल दिया जाता है, तो यह जांचना कि क्या यह क्रिया README के ​​स्थानीयकृत संस्करण को भी बदल देती है।
