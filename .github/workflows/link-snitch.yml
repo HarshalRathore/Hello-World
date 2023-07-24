@@ -1,0 +1,33 @@
+name: Link Snitch
+
+on:
+#   schedule:
+#     - cron:  '0 1 1 * *'
+  workflow_dispatch:
+
+env:
+  URL: https://open-horizon.github.io/
+  ISSUE_TEMPLATE: ".github/ISSUE_TEMPLATE/check-broken-links.md"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out master
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+      
+      - name: Run check for Broken Link
+        uses: victoriadrake/link-snitch@master
+      
+      - name: Creating issue
+        uses: JasonEtco/create-an-issue@v2.4.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LOG_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}?check_suite_focus=true
+        with:
+          filename: ${{ env.ISSUE_TEMPLATE }}
+        if: failure()
+
