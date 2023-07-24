@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Self test
+      - name: Generating Requirements.txt
         id: selftest
 
         uses: ryan-rozario/pipreqs-action-cpy@master
