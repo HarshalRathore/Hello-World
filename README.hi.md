@@ -1,12 +1,12 @@
-# हैलो-वर्ल्ड: विंक:
+# हेलो-वर्ल्ड :विंक:
 
-यह वह रिपॉजिटरी है जहां मैं जीथब क्रियाओं/वर्कफ्लो, इश्यू फॉर्म, टेम्प्लेट से संबंधित सभी प्रयोग करता हूं, परियोजना में किसी भी गैर-कोड से संबंधित योगदान का सबसे पहले यहां परीक्षण किया जाता है।
+This is the repository where I do all experiments related to github actions/workflows, issue forms, Templates any non-code related contribution to the project is first tested here.
 
-### मेरे पास अभी क्या है?
+### अभी मेरे पास क्या है?
 
--   एक प्रोडक्शन वेबसाइट पर टूटी कड़ियों की जांच करने और उसी के लिए एक मुद्दा बनाने के लिए एक कार्रवाई।
--   New Issue forms for contributors like bug-report issue template, and stuff.
+-   किसी प्रोडक्शन वेबसाइट पर टूटे हुए लिंक की जांच करने और उसके लिए एक समस्या बनाने की कार्रवाई।
+-   योगदानकर्ताओं के लिए नए अंक प्रपत्र जैसे बग-रिपोर्ट समस्या टेम्पलेट और सामग्री।
 
 # नमस्ते
 
-यदि मूल README को बदल दिया जाता है, तो यह जांचना कि क्या यह क्रिया README के ​​स्थानीयकृत संस्करण को भी बदल देती है।
+Testing if this action also changes the localised version of README if the original README is changed.
